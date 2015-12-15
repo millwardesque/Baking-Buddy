@@ -1,5 +1,5 @@
 //
-//  RecipesViewController.swift
+//  TimerViewController.swift
 //  Baking Buddy
 //
 //  Created by Chris Millward on 2015-12-14.
@@ -8,16 +8,11 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController {
-    let url = "https://www.google.com"
-    @IBOutlet weak var webView: UIWebView!
+class TimerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let requestURL = NSURL(string:url)
-        let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

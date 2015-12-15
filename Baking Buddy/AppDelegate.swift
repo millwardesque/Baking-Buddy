@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // Disable the idle timer when the app is active.
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        UINavigationBar.appearance().barTintColor = UIColor.greenColor()
+        
         return true
     }
 

@@ -8,11 +8,16 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RecipesViewController: UIViewController {
+    let url = "https://www.google.com"
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let requestURL = NSURL(string:url)
+        let request = NSURLRequest(URL: requestURL!)
+        webView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {

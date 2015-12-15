@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B1AD6871C1EE48F00380A63"
+               BuildableName = "Baking Buddy.app"
+               BlueprintName = "Baking Buddy"
+               ReferencedContainer = "container:Baking Buddy.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B1AD69D1C1EE49000380A63"
+               BuildableName = "Baking BuddyTests.xctest"
+               BlueprintName = "Baking BuddyTests"
+               ReferencedContainer = "container:Baking Buddy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B1AD6A81C1EE49000380A63"
+               BuildableName = "Baking BuddyUITests.xctest"
+               BlueprintName = "Baking BuddyUITests"
+               ReferencedContainer = "container:Baking Buddy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B1AD6871C1EE48F00380A63"
+            BuildableName = "Baking Buddy.app"
+            BlueprintName = "Baking Buddy"
+            ReferencedContainer = "container:Baking Buddy.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B1AD6871C1EE48F00380A63"
+            BuildableName = "Baking Buddy.app"
+            BlueprintName = "Baking Buddy"
+            ReferencedContainer = "container:Baking Buddy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B1AD6871C1EE48F00380A63"
+            BuildableName = "Baking Buddy.app"
+            BlueprintName = "Baking Buddy"
+            ReferencedContainer = "container:Baking Buddy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

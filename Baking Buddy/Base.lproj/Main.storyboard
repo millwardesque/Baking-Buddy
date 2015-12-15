@@ -46,10 +46,51 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Timer Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAj-ql-L3u">
+                                <rect key="frame" x="20" y="20" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSq-gI-1Iq">
+                                <rect key="frame" x="20" y="58" width="343" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj0-Cn-n9e">
+                                <rect key="frame" x="20" y="150" width="127" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onStartButtonPressed:" destination="8rJ-Kc-sve" eventType="primaryActionTriggered" id="4BZ-Kh-6us"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-K2-wUu">
+                                <rect key="frame" x="236" y="150" width="127" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="onResetButtonPressed:" destination="8rJ-Kc-sve" eventType="primaryActionTriggered" id="3lY-s7-Vvw"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-9b-Oqc">
+                                <rect key="frame" x="0.0" y="198" width="363" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="471874958.104294">
+                                    <!--2015-12-15 12:22:38 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Timers" image="second" id="cPa-gy-q4n" userLabel="Timers"/>
+                    <connections>
+                        <outlet property="datePicker" destination="oBu-9b-Oqc" id="0JF-w9-vde"/>
+                        <outlet property="resetButton" destination="RWy-K2-wUu" id="scg-6a-4Tr"/>
+                        <outlet property="startButton" destination="Xj0-Cn-n9e" id="QsA-MX-PVs"/>
+                        <outlet property="timeRemaining" destination="ZSq-gI-1Iq" id="1Cl-5I-oWH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

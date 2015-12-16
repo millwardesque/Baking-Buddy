@@ -63,7 +63,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="onStartButtonPressed:" destination="8rJ-Kc-sve" eventType="primaryActionTriggered" id="4BZ-Kh-6us"/>
+                                    <action selector="onStartButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1pN-jX-b1r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-K2-wUu">
@@ -71,13 +71,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="onResetButtonPressed:" destination="8rJ-Kc-sve" eventType="primaryActionTriggered" id="3lY-s7-Vvw"/>
+                                    <action selector="onResetButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="kj0-OT-xxx"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-9b-Oqc">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-9b-Oqc">
                                 <rect key="frame" x="0.0" y="198" width="363" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="471874958.104294">
-                                    <!--2015-12-15 12:22:38 +0000-->
+                                <date key="date" timeIntervalSinceReferenceDate="471873600.104294">
+                                    <!--2015-12-15 12:00:00 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>

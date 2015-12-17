@@ -9,7 +9,7 @@
 import UIKit
 
 class RecipesViewController: UIViewController {
-    let url = "https://www.google.com"
+    let url = "http://bakingbuddy.millwardesque.com"
     @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {

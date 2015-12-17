@@ -9,7 +9,7 @@
 import UIKit
 
 class UnitConversionViewController: UIViewController {
-    let url = "http://www.sherdog.com"
+    let url = "http://www.onlineconversion.com/cooking_volume.htm"
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {

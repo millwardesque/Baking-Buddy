@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Recipes-->
@@ -17,13 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crh-kD-gtt">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crh-kD-gtt">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="40" y="0.0" width="964" height="719"/>
+                                </variation>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Crh-kD-gtt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="76T-Ma-skL"/>
+                            <constraint firstItem="Crh-kD-gtt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="G78-fi-Keg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Crh-kD-gtt" secondAttribute="trailing" constant="20" id="IbY-EV-x4g"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Crh-kD-gtt" secondAttribute="bottom" id="XfC-2r-UJ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Crh-kD-gtt" secondAttribute="trailing" id="Zf6-5U-wwJ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Crh-kD-gtt" secondAttribute="bottom" id="cIj-rh-WT7"/>
+                            <constraint firstItem="Crh-kD-gtt" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="h9b-LZ-hZO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="76T-Ma-skL"/>
+                                <exclude reference="IbY-EV-x4g"/>
+                                <exclude reference="h9b-LZ-hZO"/>
+                                <exclude reference="cIj-rh-WT7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="76T-Ma-skL"/>
+                                <exclude reference="G78-fi-Keg"/>
+                                <include reference="IbY-EV-x4g"/>
+                                <exclude reference="Zf6-5U-wwJ"/>
+                                <include reference="h9b-LZ-hZO"/>
+                                <exclude reference="cIj-rh-WT7"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Recipes" image="first" id="acW-dT-cKf" userLabel="Recipes"/>
@@ -33,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="-1072"/>
+            <point key="canvasLocation" x="1002" y="-1073"/>
         </scene>
         <!--Timers-->
         <scene sceneID="wg7-f3-ORb">
@@ -44,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Timer Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAj-ql-L3u">
@@ -109,7 +140,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="MxF-8w-DzH" kind="relationship" relationship="viewControllers" id="BpI-xc-PbG"/>
                     </connections>
                 </tabBarController>
@@ -136,6 +166,28 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1c2-Mo-zUh" firstAttribute="top" secondItem="u7v-0M-ntx" secondAttribute="topMargin" id="6bb-H3-UwO"/>
+                            <constraint firstItem="1c2-Mo-zUh" firstAttribute="leading" secondItem="u7v-0M-ntx" secondAttribute="leadingMargin" id="KII-z7-SfP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1c2-Mo-zUh" secondAttribute="trailing" id="UPh-NC-mg8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1c2-Mo-zUh" secondAttribute="bottom" id="wZy-7B-a5V"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6bb-H3-UwO"/>
+                                <exclude reference="KII-z7-SfP"/>
+                                <exclude reference="UPh-NC-mg8"/>
+                                <exclude reference="wZy-7B-a5V"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="6bb-H3-UwO"/>
+                                <include reference="KII-z7-SfP"/>
+                                <include reference="UPh-NC-mg8"/>
+                                <include reference="wZy-7B-a5V"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Unit Conversion" image="first" id="cEq-1w-Xhe"/>

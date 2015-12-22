@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import SafariServices
 
-class RecipesViewController: UIViewController {
-    let url = "http://bakingbuddy.millwardesque.com"
+class RecipesViewController: UIViewController, SFSafariViewControllerDelegate {
+    let urlString = "http://bakingbuddy.millwardesque.com"
     @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let requestURL = NSURL(string:url)
+        let requestURL = NSURL(string:urlString)
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
     }
@@ -25,6 +26,16 @@ class RecipesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openWithSafariVC(sender: AnyObject)
+    {
+        let svc = SFSafariViewController(URL: NSURL(string: self.urlString)!)
+        svc.delegate = self
+        self.presentViewController(svc, animated: true, completion: nil)
+    }
 
+    func safariViewControllerDidFinish(controller: SFSafariViewController)
+    {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
